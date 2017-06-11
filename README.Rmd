@@ -1,0 +1,18 @@
+---
+title: "US Flag README"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Plot US flag with R grid graphics
+
+Example of using R grid graphics to plot US flag.
+
+Flag specifications [http://www.vexman.net/flagspec.htm](http://www.vexman.net/flagspec.htm)
+
+```{r, flag}
+source("us-flag.R")
+```

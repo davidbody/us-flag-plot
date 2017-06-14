@@ -39,8 +39,8 @@ grid.rect(0, unit(flag_hoist - union_hoist, "inches"),
           just = c("left", "bottom"))
 
 star <- function(x, y, radius) {
-    theta <- seq(0, 4*pi, (4/5)*pi)
-    data.frame(x = x + radius * sin(theta), y = y + radius * cos(theta))
+    theta <- seq(pi/2, 4*pi, 4*pi/5)
+    data.frame(x = x + radius * cos(theta), y = y + radius * sin(theta))
 }
 
 starsForRow <- function(n) {
